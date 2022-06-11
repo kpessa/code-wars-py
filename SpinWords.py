@@ -9,7 +9,7 @@ def spin_words(sentence):
     'Hey wollef sroirraw'
 
     """
-    return ' '.join(word if len(word) < 4 else word[::-1] for word in sentence.split())
+    return ' '.join(word if len(word) <= 4 else word[::-1] for word in sentence.split())
 
 
 if __name__ == '__main__':
